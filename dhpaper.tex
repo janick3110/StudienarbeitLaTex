@@ -1,0 +1,110 @@
+% arara: pdflatex
+% arara: bibtex
+% arara: makeglossaries
+% arara: pdflatex
+% arara: pdflatex
+\documentclass[ngerman,a4paper,12pt,pdftex]{report}
+\usepackage{dhpaper}
+\usepackage{lipsum}
+\usepackage[utf8]{inputenc} 
+\usepackage[T1]{fontenc}
+\usepackage[upright]{fourier} 
+%\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage{tkz-kiviat,numprint,fullpage} 
+\usepackage{pgfplots}
+\pgfplotsset{compat=1.16}
+
+
+\usetikzlibrary{arrows}
+\thispagestyle{empty}
+
+\hypersetup{
+	pdfborder = {0 0 0}
+}
+
+\includeonly{
+    intro,
+    foundations,
+    body,
+    conclusion,
+    glossary
+}
+
+\makeglossaries
+\include{glossary}
+
+\bibliography{dhpaper}
+
+\begin{document}
+
+% project details
+\projecttitle{Technologiegestütztes Lernen am Beispiel von LEGO}
+\projectauthor{Janick Kaltenmark \& Timo Steidinger}
+\projecttype{Studienarbeit}
+\studentid{5771742}
+
+
+% timeline
+\deadline{06.05.2021}
+\duration{26 Wochen}
+
+% school information
+\schoolname{DHBW Karlsruhe}
+\schoollogo{icon_dhbw}
+\schooladvisor{Prof. Dr. Kay Berkling}
+
+% degree information
+\degreetype{Bacherlor of Science}
+\subject{Informationstechnik}
+\courseid{TINF19B3}
+
+\maketitlepage
+
+\makestatement
+
+%\makenda
+
+% table of contents, listings
+\pagenumbering{gobble}
+\tableofcontents
+
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{1}
+% list of figures
+\listoffigures
+\addcontentsline{toc}{chapter}{Abbildungsverzeichnis}
+
+% list of tables
+\listoftables
+\addcontentsline{toc}{chapter}{Tabellenverzeichnis}
+
+% list of code listings
+%\lstlistoflistings
+%\addcontentsline{toc}{chapter}{Codelistingverzeichnis}
+
+% actual body of the report
+\begin{onehalfspace}
+    \clearpage
+    \pagenumbering{arabic}
+    % main body of the report, separated by chapters
+    \include{intro}
+    \include{foundations}
+    \include{body}
+    \include{conclusion}
+\end{onehalfspace}
+
+\clearpage
+\pagenumbering{roman}
+\setcounter{page}{4}
+\appendix
+
+% bibliography
+\printbibliography[title={Literaturverzeichnis}]
+\addcontentsline{toc}{chapter}{Literaturverzeichnis}
+
+% list of abbreviations, glossary of terms
+\printglossary[title={Abkürzungsverzeichnis},type=\acronymtype]
+\printglossary
+
+\end{document}
