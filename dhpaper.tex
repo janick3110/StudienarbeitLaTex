@@ -27,13 +27,16 @@
 	pdfborder = {0 0 0}
 }
 
-\includeonly{
-    intro,
-    foundations,
-    body,
-    conclusion,
-    glossary
-}
+%\includeonly{
+%    intro,
+%    foundations,
+%    body,
+%    conclusion,    
+%    qualitativeStudy,
+%    beobachtungen,
+%    quantitativeStudy,
+%    glossary
+%}
 
 \makeglossaries
 \include{glossary}
@@ -46,7 +49,7 @@
 \projecttitle{Technologiegestütztes Lernen am Beispiel von LEGO}
 \projectauthor{Janick Kaltenmark \& Timo Steidinger}
 \projecttype{Studienarbeit}
-\studentid{5771742}
+\studentid{5771742 \& 1877259}
 
 
 % timeline
@@ -95,7 +98,10 @@
     % main body of the report, separated by chapters
     \include{intro}
     \include{foundations}
-    \include{body}
+    \include{qualitativeStudy}
+    \include{beobachtungen}
+    \include{quantitativeStudy}
+    \include{auswertung}
     \include{conclusion}
 \end{onehalfspace}
 
@@ -112,16 +118,7 @@
 \printglossary[title={Abkürzungsverzeichnis},type=\acronymtype]
 \printglossary
 
-\chapter{Anhang}
+\include{appendix}
 
-\begin{figure}[h]
-	\centering
-	\begin{tabular}{@{}c@{\hspace{.5cm}}c@{}}
-		\includegraphics[page=1,width=.45\textwidth]{observation_sheets} & 
-		\includegraphics[page=2,width=.45\textwidth]{observation_sheets} \\
-	\end{tabular}
-	\caption{Test}
-	\label{pdf:observation_sheets}
-\end{figure}
 
 \end{document}
