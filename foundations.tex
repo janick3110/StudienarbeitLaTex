@@ -71,11 +71,64 @@ Im folgenden wird zur Einordnung der bereits genannten Tiere in das gesamte Spek
 
 
 
-\section{Computational Thinking}
+\section{Computational Thinking} \label{sec:ct}
+Um das informatische Denken der Kinder messen zu können, wurde mit den Kindern der Computational Thinking Test durchgeführt. Da die Kinder noch sehr jung sind, wurde deshalb die spezielle Variante für Jüngere, der sogenannte Beginners Computational Thinking Test, von den Kindern absolviert. Nach den Autoren des \acrshort{bctt}, \citeauthor{bcct}, ist die Fähigkeit des Computational Thinkings, eine kognitive Fähigkeit, welche für eine erfolgreiche Anpassung an die Zukunft wichtig ist, eine Kernfähigkeit. Dadurch, dass die Welt immer mehr den Schwerpunkt auf Technologie und Programmierungen legt, ist diese Fähigkeit des Computational Thinkings eine sehr kritische. Die Autoren des \acrshort{bctt} halten es für wichtig, dass Schüler und Schülerinnen in der Lage sein sollten, kritisch zu denken und komplexere Probleme lösen zu könne.\\
+Die vier Kernelemente des Computational Thinkings sind Abstraktion, Dekomposition, Algorithmen und das Debugging.\\
+\cite{bcct} 
+\subsection{Beginners Computational Thinking Test}
+Der \acrlong{bctt}, kurz \acrshort{bctt}, ist eine Weiterentwicklung des Computational Thinking Tests für Jüngere. Gemeinsam mit Experten wurde eine erste Version erstellt, welche mithilfe von Pilottests und Experten in eine zweite Variante verbessert wurde. Diese wurde anschließend an verschiedenen Schulen in Spanien durchgeführt.\\
+
+Der \acrshort{bctt} ist in mehrere Segmente aufgeteilt. Insgesamt sind es drei große Kerngebiete, die wiederum in sechs verschiedene Aufgabengebiete aufgeteilt wurden, die der Test überprüft. Das erste Segment \glqq Sequences"' überprüft, ob die Kinder in der Lage sind, Sequenzen zu folgen. Dies ist das erste Kerngebiet des \acrshort{bctt}. Der zweite Abschnitt überprüft einfache Schleifen, der dritte Abschnitt überprüft verschachtelte Schleifen. Die beiden genannten Abschnitte bilden damit die Überprüfung für Schleifen. Das letzte Kerngebiet sind die sogenannten Conditionals. Dieses Kerngebiet wird von den drei Gebieten If-Then, If-Then-Else und While gebildet. Dort wird überprüft, ob die Kinder in der Lage sind, Anweisungen, welche an Bedingungen geknüpft sind, korrekt auszuführen.\\
+
+Die Gebiete sind nicht gleich groß. Die Größe der Aufgabengebiete ist in der untenstehenden Tabelle dargestellt. Der größte Bereich wird vom Kerngebiet Schleifen gebildet, gefolgt von den Conditionals. Das kleinste Kerngebiet sind die einfachen Sequenzen.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|}
+		\hline
+		Bezeichnung              & Anzahl Fragen \\ \hline
+		Sequenzen                & 6             \\ \hline
+		einfache Schleifen       & 5             \\ \hline
+		verschachtelte Schleifen & 7             \\ \hline
+		If-Then                  & 2             \\ \hline
+		If-Then-Else             & 2             \\ \hline
+		While                    & 3             \\ \hline
+	\end{tabular}
+	\caption{Anzahl Fragen pro Aufgabengebiet}
+	\label{tab:distQuestions}
+\end{table}
+
+In Abbildung \ref{img:bcttQuestion} ist beispielhaft eine Frage eines Aufgabengebiets, hier das Gebiet der While-Conditionals, dargestellt. Eine Frage besteht immer aus einer Grafik und vier dazugehörigen Antworten, von denen nur eine richtig ist. Bei den Antwortmöglichkeiten sind die jeweiligen Anweisungen dargestellt, welche zur Lösung führen sollen. Die Aufgaben, bei denen neben Pfeilen auch andere Symbole verwendet werden, wie in der untenstehenden Abbildung dargestellt, beinhalten noch eine zusätzliche Anweisung für die Person, die den Test bearbeitet. 
+
+\begin{figure}[H]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/bcttQuestion}}
+	\caption[Beispielhafte Frage des \acrshort{bctt}]{Beispielhafte Frage des \acrshort{bctt}\cite{bcct}}
+	\label{img:bcttQuestion}
+\end{figure}
+
+Die zweite Version des Tests wurde so abgeändert, dass auch Farbenblinde diesen Test durchführen können, weshalb die Felder in Abbildung \ref{img:bcttQuestion} mit Symbolen versehen wurden statt wie ursprünglich nur farbig dargestellt. Dies hat den Vorteil, dass zusätzlich der Test nicht zwingend in Farbe gedruckt werden muss, sondern auch in schwarz-weiß gut lösbar ist. \cite{bcct}
+
+Der Test wurde wie bereits erwähnt an mehreren Schulen in Spanien angewendet. Insgesamt wurde eine Stichprobe von 299 Schüler und Schülerinnen an drei verschiedenen Schulen durchgeführt. Die Schüler und Schülerinnen waren in verschiedenen Klassenstufen, so dass der Test die Klassen 1,2,4,5 und 6 abdeckte. Für die Studienarbeit sind die Daten der Schüler und Schülerinnen relevant, welche die zweite Variante des \acrshort{bctt} durchführten. Die Ergebnisse nach \citeauthor{bcct} sind in der untenstehenden Tabelle dargestellt. Für die Studienarbeit nicht relevante Daten wurden aus Gründen der Übersichtlichkeit nicht übertragen.
+
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|l|l|l|l|}
+		\hline
+		\rowcolor[HTML]{C0C0C0} 
+		Klassenstufe & N  & durchschnittliches Ergebnis & Standardabweichung \\ \hline
+		2            & 18 & 14.278                      & 2.445              \\ \hline
+		4            & 28 & 21.286                      & 1.922              \\ \hline
+		6            & 25 & 21.280                      & 3.542              \\ \hline
+	\end{tabular}
+	\caption[Statistiken des \acrshort{bctt}]{Statistiken des \acrshort{bctt} nach \citeauthor{bcct}}
+	\label{tab:statisticsBCTT}
+\end{table}
+
 
 \section{Torrance Tests}{
 	\label{sec:torrance_tests}
-	\begin{figure}[htbp!]
+	\begin{figure}[H]
 		\centering
 		\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/ttct}}
 		\caption[Relation von TTCT-Maßnahmen]{Relation von TCTT-Maßnahmen gegenüber kreativem Denken und kreativer Haltung \cite{Kim2016}}
