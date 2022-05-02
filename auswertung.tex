@@ -184,16 +184,59 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 \section{Computational Thinking Test}
 	In dem folgenden Abschnitt wird die Auswertung der Ergebnisse des \acrshort{bctt}, welcher zu Beginn der Studie durchgeführt wurde, sowie die des \acrshort{cctt}, welcher nach Abschluss aller Termine von den Kindern bearbeitet wurde. Die Ergebnisse der beiden Tests befinden sich im Kapitel \ref{sec:ErgebnisseCTT}.
 	\subsection{BCTt}
-	In Kapitel \ref{sec:ct} wurde aufgeführt, welche Ergebnisse bei einer Durchführung des \acrshort{bctt} bei einer Stichprobe von 299 Schülern und Schülerinnen auftreten. Anhand dieser Daten kann nun die Gruppe der Kinder, die an dieser Studie an der \acrshort{dhbw} Karlsruhe teilnahmen, in ihrem informatischen Denken eingeordnet werden. Dazu werden die Daten der Kinder aus Tabelle \ref{tab:data} noch einmal aufbereitet, so dass ein guter Vergleich gezogen werden kann. Generell ist zu beachten, dass die Stichprobe, die von \citeauthor{bcct} aufgeführt wurde, eine deutlich höhere Anzahl an Teilnehmern hat als die Anzahl, die in dieser Studienarbeit zur Verfügung stand. Dadurch kann nur beurteilt werden, ob die Kinder dieser Studie dem Durchschnitt entsprachen oder über- bzw. unterdurchschnittlich abschnitten.
+	In Kapitel \ref{sec:ct} wurde aufgeführt, welche Ergebnisse bei einer Durchführung des \acrshort{bctt} bei einer Stichprobe von 299 Schülern und Schülerinnen auftreten. Anhand dieser Daten kann nun die Gruppe der Kinder, die an dieser Studie an der \acrshort{dhbw} Karlsruhe teilnahmen, in ihrem informatischen Denken eingeordnet werden. Dazu werden die Daten der Kinder aus Tabelle \ref{tab:data} in der untenstehenden Tabelle noch einmal aufbereitet, so dass ein guter Vergleich gezogen werden kann. Generell ist zu beachten, dass die Stichprobe, die von \citeauthor{bcct} aufgeführt wurde, eine deutlich höhere Anzahl an Teilnehmern hat als die Anzahl, die in dieser Studienarbeit zur Verfügung stand. Dadurch kann nur beurteilt werden, ob die Kinder dieser Studie dem Durchschnitt entsprachen oder über- bzw. unterdurchschnittlich abschnitten.
 	\begin{table}[H]
 		\centering
-		\begin{tabular}{|l|l|}
+		\begin{tabular}{|l|l|l|l|}
 			\hline
 			\rowcolor[HTML]{C0C0C0} 
-			Bezeichnung                 & Wert   \\ \hline
-			Durchschnittliches Ergebnis & 20.625 \\ \hline
-			Standardabweichung          & 4.923  \\ \hline
+			\textbf{Klassenstufe} & \textbf{Anzahl} & \textbf{Durchschnitt} & \textbf{Std. Abweichung} \\ \hline
+			2                     & 6               & 19.5                  & 5,188                    \\ \hline
+			3                     & 2               & 24                    & 1                        \\ \hline
 		\end{tabular}
+	\label{tab:statisticAufbereitung}
 	\caption{Statistische Aufbereitung der Werte der Tabelle \ref{tab:data}}
 	\end{table}
+
+	Für die Altersgruppe der Kinder, die sich während des Tests in der dritten Klassenstufe befanden, existieren seitens der Autoren des \acrshort{bctt} keine Vergleichsdaten. Die Kinder, die die dritte Stufe besuchten, übertrafen im Vergleich zu den Daten aus Tabelle \ref{tab:statisticsBCTT}. Diese Kinder schnitten im Durchschnitt besser ab und die Standardabweichung lag auch deutlich unter den von \citeauthor{bcct} angegebenen Daten. Die Stichprobe, die von den Autoren dieser Studienarbeit durchgeführt wurde, ist jedoch nicht sehr groß, weshalb die Aussagekraft über das Abschneiden der Kinder nicht sehr hoch ist.\\
+	Anders sieht es bei den Kindern der Klassenstufe Zwei aus. Wie aus der obenstehenden Tabelle zu entnehmen ist, lag der Durchschnitt, den die Kinder beim Bearbeiten des \acrlong{bctt} erzielten, zwar ebenfalls über dem Durchschnitt aus Tabelle \ref{tab:statisticsBCTT}, jedoch ist die Standardabweichung, die für diese Gruppe ermittelt wurde, doppelt so hoch als die Vergleichsdaten der Kinder aus Spanien. Wie aus der Tabelle \ref{tab:data} erkennbar ist, lag die Streuung der Ergebnisse der Kinder, die die Klassenstufe Zwei besuchten, in einem Bereich von 10 Punkten bis hin zur maximal erreichbaren Punktzahl von 25 Punkten.   
 	\subsection{CCTt}
+	\pgfplotstableread[row sep=\\,col sep=&]{
+		Name &Ohne Abzug &Mit Abzug \\
+		Henriette     & 4  & 1 \\
+		Moritz     & 16 & 15 \\
+		Heinz    & 0 & 0\\
+		Benny   & 11 & 11\\
+		Lulu   & 6  & 4\\
+		Mario      & 0 & 0\\
+		Sara &6 & -6\\
+		Jonas&3 & -2\\
+	}\mydata
+
+	\begin{figure}[H]
+		\begin{tikzpicture}
+			\begin{axis}[ ybar,
+				bar width=.5cm,
+				width=\textwidth,
+				height=.5\textwidth,
+				legend style={at={(0.5,1)},
+					anchor=north,legend columns=-1},
+				symbolic x coords={Henriette, Moritz, Heinz, Benny, Lulu, Mario, Sara, Jonas},
+				xtick=data,
+				nodes near coords,
+				nodes near coords align={vertical},
+				ymin=-10,ymax=20,
+				ylabel={Anzahl erreichter Punkte}, xlabel = {Name des Kindes}]
+				\addplot table[x=Name,y=Ohne Abzug]{\mydata};
+				\addplot table[x=Name,y=Mit Abzug]{\mydata};
+				\addlegendentry{Ohne Abzug}
+				\addlegendentry{Mit Abzug}
+			\end{axis}
+		\end{tikzpicture}
+		\caption[Änderungen Punktzahlen nach Abzug]{Änderungen der Punktzahlen nach Abzug der falschen Antworten}
+		\label{img:wrongAnswerCorrection}
+	\end{figure}
+
+
+
+	
