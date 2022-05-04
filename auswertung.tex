@@ -36,7 +36,7 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 			]
 			%Timo
 			\addplot coordinates
-			{(Teamwork, 1.33)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
+			{(Teamwork, 1.32)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
 			%Durchschnitt
 			\addplot coordinates
 			{(Teamwork, 1.2)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
@@ -65,7 +65,11 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 		coordinates {
 			(3,2.5) (5,2.375) (6,2.25) (7,2.67) (8,2.375) (10,2.25) (12,2.25)
 		};
-		\legend{Teamwork}
+		\addlegendentry{Teamwork}
+		coordinates {
+			(3,0.25) (5,0.5) (6,0.5) (7,0.5) (8,0.75) (10,1) (12,0.25)
+		};
+		\addlegendentry{Divergent Thinking}
 	\end{axis}
 \end{tikzpicture}
 
@@ -155,32 +159,164 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 
 
 \subsection{Teamwork}
-\begin{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east]
+			\addplot[mark=*,yellow]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\addlegendentry{Panda}
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
+			};
+			\addlegendentry{Erdmännchen}
+			\addplot[mark=*,green]
+			coordinates {
+				(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
+			};
+			\addlegendentry{Elefant}
+			\addplot[mark=*,red]
+			coordinates {
+				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+			};
+			\addlegendentry{Border Collie}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung der Teamarbeitsfähigkeit}
+\end{figure}
+
+\subsection{Divergentes Denken}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east]
+			\addplot[mark=*,yellow]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\addlegendentry{Panda}
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
+			};
+			\addlegendentry{Erdmännchen}
+			\addplot[mark=*,green]
+			coordinates {
+				(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
+			};
+			\addlegendentry{Elefant}
+			\addplot[mark=*,red]
+			coordinates {
+				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+			};
+			\addlegendentry{Border Collie}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung des divergenten Denkens}
+\end{figure}	
+
+
+\subsection{Emergentes Denken}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east]
+			\addplot[mark=*,yellow]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\addlegendentry{Panda}
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
+			};
+			\addlegendentry{Erdmännchen}
+			\addplot[mark=*,green]
+			coordinates {
+				(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
+			};
+			\addlegendentry{Elefant}
+			\addplot[mark=*,red]
+			coordinates {
+				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+			};
+			\addlegendentry{Border Collie}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung des emergenten Denkens}
+\end{figure}	
+
+
+\subsection{Kreative Haltung}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east]
+			\addplot[mark=*,yellow]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\addlegendentry{Panda}
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
+			};
+			\addlegendentry{Erdmännchen}
+			\addplot[mark=*,green]
+			coordinates {
+				(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
+			};
+			\addlegendentry{Elefant}
+			\addplot[mark=*,red]
+			coordinates {
+				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+			};
+			\addlegendentry{Border Collie}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung der kreativen Haltung}
+\end{figure}	
 	
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,yellow]
-		coordinates {
-			(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
-		};
-		\addlegendentry{Panda}
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
-		};
-		\addlegendentry{Erdmännchen}
-		\addplot[mark=*,green]
-		coordinates {
-			(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
-		};
-		\addlegendentry{Elefant}
-		\addplot[mark=*,red]
-		coordinates {
-			(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
-		};
-		\addlegendentry{Border Collie}
-		
-	\end{axis}
-\end{tikzpicture}
+	
+\subsection{Konvergentes Denken}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east]
+			\addplot[mark=*,yellow]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\addlegendentry{Panda}
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.83)(3,1.66)(5,2.25)(6,1.63)(7,1.58)(8,1.6)(10,1.18)(11,.56)(12,.58)
+			};
+			\addlegendentry{Erdmännchen}
+			\addplot[mark=*,green]
+			coordinates {
+				(2,1.48)(3,1.9)(5,1.28)(6,1.32)(7,0.68)(8,0.66)(10,.78)(11,.72)(12,.66)
+			};
+			\addlegendentry{Elefant}
+			\addplot[mark=*,red]
+			coordinates {
+				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+			};
+			\addlegendentry{Border Collie}
+			
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung des konvergenten Denkens}
+\end{figure}	
+
+
 \section{Computational Thinking Test}
 	In dem folgenden Abschnitt wird die Auswertung der Ergebnisse des \acrshort{bctt}, welcher zu Beginn der Studie durchgeführt wurde, sowie die des \acrshort{cctt}, welcher nach Abschluss aller Termine von den Kindern bearbeitet wurde. Die Ergebnisse der beiden Tests befinden sich im Kapitel \ref{sec:ErgebnisseCTT}.
 	\subsection{BCTt}
