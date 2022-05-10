@@ -6,6 +6,95 @@ In den folgenden Abschnitten werden Grundlagen gelegt, welche für das weitere V
 \gls{Lego}
 Hier steht nachher Zeugs, was mit Lego zu tun hat. Dazu gehört die WeDo-Kästen und auf jeden Fall der Wettbewerb, zumindest sollte definiert werden, warum die Kinder eigentlich mitmachen.
 
+
+\section{Das Baukastensystem LEGO WeDo2.0}
+Zur Durchführung der Kurse wurde der Baukasten LEGO WeDo 2.0 verwendet. Dessen Eigenschaften und Konzepte sollen hier erläutert werden.
+\subsection{Das Konzept des Baukastens}
+Die LEGO WeDo Produktreihe zielt darauf ab, Kindern spielerisch Inhalte der Naturwissenschaft und Technik, sowie grundlegende Programmierkonzepte zu vermitteln. Hierfür werd von LEGO Handbücher für Lehrer, Leitfäden sowie die Software mit der die Elektronischen Bauteile programmiert werden können zur Verfügung gestellt. Somit richten sich die Baukästen speziell an Schulen und andere Bildungseinrichtungen. Zu den Baukästen gibt es jeweils ein äquivalentes Produkt für zuhause, welches jedoch weniger technische Bauteile (Balken, Achsen, Zahnräder) sondern mehr bunte und dekorative Bauteile enthält.\\ 
+Der Vorgänger des WeDo 2.0 Baukastens musste noch über ein USB Kabel direkt mit dem Computer verbunden sein. Des weiteren, enthielt dieser lediglich einen Motor, dessen Drehrichtung und Geschwindigkeit vom Computer aus eingestellt werden konnte. Aufgrund der benötigten USB Verbindung war es nicht möglich die Modelle von Tablet-Computern oder Smartphones zu steuern.  \\
+Dahingegen verfügt der verwendete WeDo 2.0 Baukasten über zwei Sensoren und einen Motor. Des weiteren wird keine USB Verbindung mehr benötigt, sondern der Programmierbare Baustein über Bluetooth angesteuert. Durch die App kann neben einem normalen Computer auch über einen Tablet-Computer oder ein Smartphone programmiert werden.
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/lego-education-wedo-20}}
+	\caption[Der WeDo 2.0 Baukasten]{Der WeDo 2.0 Baukasten} % \cite{knowAndLove}
+	\label{img:lego-education-wedo-20}
+\end{figure} 
+
+\subsection{Inhalt}
+
+\subsection{Die Projektbibliothek}\label{Projektbibliothek}
+
+\subsection{Programmieren mit der WeDo 2.0 Software}
+Um für Kinder leichter greifbar zu sein, wurde zum programmieren der Modelle eine Oberfläche gewählt, bei der einzelne Programmblöcke hinter einander gezogen werden. Die Abfolge der Blöcke ergibt damit das fertige Programm. Nach ihrer jeweiligen Funktion lassen sich die Programmblöcke in Kategorien einteilen. Eine Einteilung ist von LEGO durch die Farbgebung der Programmblöcke bereits gegeben. \\
+Einige Blöcke benötigen einen zusätzlichen Wert, der ihnen übergeben werden muss. Diese sind mit einer halbkreisförmigen Öffnung an der Unterseite versehen. Die Blöcke, welche diese Werte liefern, hingegen sind mit einer halbkreisförmigen Wölbung versehen. 
+
+\subsubsection{Die Aktionsblöcke}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Aktionsblöcke.png}}
+	\caption[Die Aktionsblöcke]{Die Aktionsblöcke} % \cite{knowAndLove}
+	\label{img:Aktionsblöcke}
+\end{figure}
+
+Mit den Aktionsblöcken Abb. \ref{img:Aktionsblöcke} können Motoraktionen und die Farbe der Statusleuchte gesteuert werden. Für den Motor kann einerseits die Richtung in welche sich der Motor dreht, die Geschwindigkeit und die Dauer der Motordrehung gesteuert werden.
+
+\subsubsection{Die Arithmetik- und Medienblöcke}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/LogikProgrammblöcke.png}}
+	\caption[Die Arithmetik und Medienblöcke]{Die Arithmetik und Medienblöcke} % \cite{knowAndLove}
+	\label{img:ArithmetikUndMedienblöcke}
+\end{figure}
+Mangels einer besseren Bezeichnung für diese Kategorie werden deren Blöcke hier als  Arithmetik- und Medienblöcke bezeichnet (Abb. \ref{img:ArithmetikUndMedienblöcke}). Es können einerseits Geräusche und Töne abgespielt werden. In der Bibliothek stehen 28 unterschiedliche Tonaufnahmen zur Verfügung. Ebenfalls können Bilder auf dem Bildschirm angezeigt werden. Die Tonaufnahmen und Bilder aus der Bibliothek passen jeweils Thematisch zu den Projekten aus der Projektbibliothek \ref{Projektbibliothek}. Die Bibliothek kann jedoch durch eigene Tonaufnahmen und Bilder ergänzt werden. Die Bilder und Tonaufnahmen werden von dem Gerät aus abgespielt, über welches das Modell programmiert wird, da der programmierbare Legostein, der die Befehle von dem Master-Gerät entgegennimmt, weder über ein Display, noch über Lautsprecher verfügt.\\
+Mit den beiden Arithmetikblöcken können einfache Berechnungen durchgeführt werden. Es kann lediglich ein einziger Wert als Variable existieren. Dieser wird auf dem Bildschirm als große Zahl angezeigt. Das erlaubt die Beobachtung des Wertes, während der Programmausführung. Zur Verfügung stehen die Operationen: \textit{Plus}, \textit{Minus}, \textit{Mal} und \textit{Geteilt durch}.\\
+Mit dem letzten Block dieser Kategorie (ganz rechts) kann das Bild und die Variable die angezeigt wird vergrößert oder verkleinert werden.
+
+\subsubsection{Die Programmablaufblöcke}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Programmablaufblöcke.png}}
+	\caption[Die Programmablaufblöcke]{Die Programmablaufblöcke} % \cite{knowAndLove}
+	\label{img:Programmablaufblöcke}
+\end{figure}
+In Abb. \ref{img:Programmablaufblöcke} sind die Blöcke zu sehen, welche den Programmablauf steuern. Bei den drei linken Blöcken handelt es sich um die verschiedenen Startblöcke.\\
+Der mit dem grünen Pfeil erlaubt den Start eines dahinterliegenden Programmteils mittels eines einfachen Knopfdrucks. Mit dem zweiten Block kann der Programmteil durch einen Buchstaben der Tastatur gestartet werden. Der Buchstabe mit dem das Programm gestartet wird, kann für jeden einzelnen dieser Blöcke geändert werden, sodass ein leichtes Auswählen verschiedener Programmteile ermöglicht wird.\\
+Der dritte Startblock mit dem Briefumschlag, der in einen Briefkasten geworfen wird, als Symbolbild kann ein Programm durch ein Signal aus einem anderen Programmteil gestartet werden. Das Signal wird von dem Block rechts daneben gesendet, mit dem Briefumschlag als Symbolbild. Diesem wird ein Wert Übergeben und anschließend wird der Startblock gestartet, der den gleichen Wert hat. \\
+Der Block mit der Sanduhr dient dazu, eine bestimmte Zeit zu Warten. Er kann jedoch auch dafür verwendet werden, auf einen Sensorzustand zu warten. Ein kleines Beispiel zu dem Programmstart mit dem Postkasten-Block und dem Warten-Block ist in Abb. \ref{img:Beispiel_01} zu sehen. Dabei wird nach Starten des Programms durch den grünen Pfeil, zunächst der obere Programmteil gestartet, welcher den Motor nach rechts drehen lässt und nach einer Sekunde der untere Programmteil, der den Motor nach links drehen lässt. 
+
+
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Example_01.png}}
+	\caption[Beispielprogramm zum Start aus anderem Programmteil]{Beispielprogramm zum Start aus anderem Programmteil} % \cite{knowAndLove}
+	\label{img:Beispiel_01}
+\end{figure}
+
+\subsubsection{Wertblöcke}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Werte.png}}
+	\caption[Werte]{Werte} % \cite{knowAndLove}
+	\label{img:Werte}
+\end{figure}
+
+Die
+
+
+\subsubsection{Sensorwertblöcke}
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Sensoren.png}}
+	\caption[Sensorwerte]{Sensorwerte} % \cite{knowAndLove}
+	\label{img:Sensorwerte}
+\end{figure}
+
+
+
+
+
+
 \section{Myers-Briggs-Typenindikator\textsuperscript{\textregistered}} 
 \subsection{Typen nach Jung}
 Der Psychoanalytiker Carl Gustav Jung definierte im 20. Jahrhundert insgesamt acht verschiedene Typen. Diese Typen sind unterteilt in zwei Kategorien mit je vier Typen. Die beiden Kategorien, die Jung definierte, sind die Kategorie \glqq Extrovertiert"' und \glqq Introvertiert"'. In beiden Kategorien sind jeweils die vier Typen Fühlend, Denkend, Intuitiv und Empfindend. \cite{jung_1921}\\
