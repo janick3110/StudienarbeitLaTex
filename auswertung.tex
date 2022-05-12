@@ -1,5 +1,5 @@
 \chapter{Auswertung}
-\section{Auswertung der subjektiven Beobachtungen}
+\section{Auswertung der subjektiven Beobachtungen}\label{sec:auswertungSubjektiv}
 Im folgenden Abschnitt wird die Auswertung der im vorherigen Kapitel beschriebenen Beobachtungen durchgeführt.
 \subsection{Problemstellung}
 Nach Abschluss der Beobachtungsphase der Kinder musste nun eine Grundlage geschaffen werden, so dass die Daten, die dabei gesammelt wurden, miteinander vergleichbar werden. Durch die subjektive Beobachtungen der Autoren ist die Vergleichbarkeit nicht gegeben. Daher wurde für die Studienarbeit eine Metrik geschaffen, deren Ziel es war, aus subjektiven Bewertungen Werte zu erhalten, mit welchen besser gerechnet und verglichen werden kann.
@@ -59,100 +59,159 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 
 \section{Entwicklung der Kinder}
 \subsection{Jonas}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(3,2.5) (5,2.375) (6,2.25) (7,2.67) (8,2.375) (10,2.25) (12,2.25)
-		};
-		\addlegendentry{Teamwork}
-		coordinates {
-			(3,0.25) (5,0.5) (6,0.5) (7,0.5) (8,0.75) (10,1) (12,0.25)
-		};
-		\addlegendentry{Divergent Thinking}
-	\end{axis}
-\end{tikzpicture}
+
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(3,2.5) (5,2.375) (6,2.25) (7,2.67) (8,2.375) (10,2.25) (12,2.25)
+			};
+			\addlegendentry{Teamwork}
+			\addplot[mark=*,red]
+			coordinates {
+				(3,0.25) (5,0.5) (6,0.5) (7,0.5) (8,0.75) (10,1) (12,0.25)
+			};
+			\addlegendentry{Divergent Thinking}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:jonasDevelopment}
+	\caption{Entwicklung von Jonas}
+\end{figure}
+
+
+Die Entwicklung von Jonas zeigt eine sehr schwankende Entwicklung der Kategorie Teamwork. Der Durchschnitt der Bewertungen aus dem vorherigen Kapiteln wies wie in der obenstehenden Abbildung zwar Spitzen von einer Bewertung von fast 2.7 auf, hatte aber auch einen dafür deutlich ausfallenden Abfall seiner Fähigkeiten im Team zu arbeiten. Von einer Entwicklung im Bereich des Teamworks kann daher nicht gesprochen werden.
 
 \subsection{Mario}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,1.94)(3,2.06)(6,2.06)(7,1.94)(8,1.94)(11,2.06)(12,1.94)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.94)(3,2.06)(6,2.06)(7,1.94)(8,1.94)(11,2.06)(12,1.94)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:marioDevelopment}
+	\caption{Entwicklung von Mario}
+\end{figure}
+
+
+
+Auch Mario zeigte bei seiner Entwicklung im Teamwork nur wenig Verbesserung, dafür aber Konstanz. Die Differenz zwischen Maxima und Minima betragen bei ihm nur 0.12. Das bedeutet, dass auch Mario keine Entwicklung im Bereich Teamwork aufweisen kann. Generell ist seine Teamfähigkeit im oberen Mittelfeld einzuordnen.
 
 \subsection{Sara}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\caption{Entwicklung von Sara}
+	\label{img:saraDevelopment}
+\end{figure}
 
-
+Sara zeigte im Laufe der Kurse eine starke Verbesserung ihrer Teamfähigkeit. Von anfänglich einer Bewertung von nicht einmal 0.5, zeigte Sara im weiteren Verlauf große Sprünge, so dass ihre Teamfähigkeit von den Autoren und der externen Person der \acrshort{guc} mit Werten nahe der 1.0 bewertet wurden. Für Sara ist daher eine Entwicklung im Bereich des Teamworks zu notieren.
 \subsection{Benny}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,1.45)(3,1.31) (5,2.37) (6,2.06) (7,1.4) (8,1.33) (10,.57) (11,.5)(12,.54)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,1.45)(3,1.31) (5,2.37) (6,2.06) (7,1.4) (8,1.33) (10,.57) (11,.5)(12,.54)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:bennyDevelopment}
+	\caption{Entwicklung von Benny}
+\end{figure}
+Zu Beginn der Kurse zeigte sich wie in Abbildung \ref{img:bennyDevelopment} zu sehen eine starke Verbesserung seiner Teamfähigkeiten, diese näherten sich dem im Vergleich zu den anderen Kindern Spitzenwert 2.5 stark an. Nachdem jedoch das Maximum erreicht war, ließen seine Teamfähigkeiten drastisch nach, so dass gegen Ende nur noch Bewertungen von etwa 0.5 erreicht wurden. Für Benny ist daher eine Entwicklung seiner Teamfähigkeit zu vermerken, eine positive Entwicklung in den ersten Terminen und am Ende eine Verschlechterung seiner Fähigkeit.
+
 
 
 \subsection{Henriette}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,2.21)(3,2)(5,2.31)(6,1.19)(7,1.75)(8,1.88)(10,1.79)(11,0.63)(12,0.63)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,2.21)(3,2)(5,2.31)(6,1.19)(7,1.75)(8,1.88)(10,1.79)(11,0.63)(12,0.63)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:henrietteDevelopment}
+	\caption{Entwicklung von Henriette}
+\end{figure}
+Henriette entwickelte ihre Teamfähigkeit während den Kursen nur sehr wenig in positive Richtung. Der Durchschnitt der Bewertungen zeigte bei ihr in Abbildung \ref{img:henrietteDevelopment}, dass sie zwar eine starke Teamfähigkeit besaß, diese aber sich im Verlaufe der Kurse in eine schlechte Richtung entwickelten, so dass eine Differenz von 1.68 zwischen den Bewertungen an ihrem besten Tag und an ihrem schlechtesten Tag.
+
 
 \subsection{Moritz}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,2.43)(3,2.43)(5,1.5)(6,1.2)(10,1.33)(11,.73)(12,.53)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,2.43)(3,2.43)(5,1.5)(6,1.2)(10,1.33)(11,.73)(12,.53)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:moritzDevelopment}
+	\caption{Entwicklung von Moritz}
+\end{figure}
+Mithilfe den Bewertungen aus Kapitel \ref{sec:auswertungSubjektiv} konnte bei Moritz ein negativer Trend festgestellt werden. Aus der obenstehenden Abbildung wird sichtbar, dass Moritz sich nicht verbessert, dafür aber in fast allen Terminen eine schlechtere Teamfähigkeit aufwies als an dem Termin davor. Seine Bewertungen für die ersten Termine lag bei 2.43, der höchste Wert von allen teilnehmenden Kindern.
+
 
 
 \subsection{Lulu}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(2,2.01)(3,2.43)(5,1.14)(6,1.5)(7,1)(8,.67)(10,1)(11,.43)(12,.38)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(2,2.01)(3,2.43)(5,1.14)(6,1.5)(7,1)(8,.67)(10,1)(11,.43)(12,.38)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:luluDevelopment}
+	\caption{Entwicklung von Lulu}
+\end{figure}
+Der Trend von Lulus in Entwicklung im Bereich Teamwork ist negativ. Nach einer kleinen Steigerungsphase zu Beginn, verschlechtert sich ihre Teamfähigkeit in den meisten Kursen. Hin und wieder sind Verbesserungen im Vergleich zu den voherigen Terminen sichtbar, diese knüpfen jedoch nicht mehr an die guten Leistungen im Bereich Teamwork an.
+
 
 
 \subsection{Heinz}
-\begin{tikzpicture}
-	\begin{axis}[legend pos=outer north east]
-		\addplot[mark=*,blue]
-		coordinates {
-			(3,1)(5,1.2)(6,1.25)(7,1.05)(8,1.3)(11,1)(12,1.08)
-		};
-		\legend{Teamwork}
-	\end{axis}
-\end{tikzpicture}
+\begin{figure}[H]
+	\centering
+	\begin{tikzpicture}
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+			\addplot[mark=*,blue]
+			coordinates {
+				(3,1)(5,1.2)(6,1.25)(7,1.05)(8,1.3)(11,1)(12,1.08)
+			};
+			\legend{Teamwork}
+		\end{axis}
+	\end{tikzpicture}
+	\label{img:heinzDevelopment}
+	\caption{Entwicklung von Heinz}
+\end{figure}
+Während den Kursen zeigte Heinz wie in der Abbildung \ref{img:heinzDevelopment} dargestellt eine konstante Teamfähigkeit. Für ihn ist keine Entwicklung in diesem Bereich sichtbar, nur leichtere Schwankungen wurden notiert. Jedoch liegen seine Werte nur knapp über 1.0, damit liegt er sehr weit hinten im Vergleich zu den Bestwerten der anderen Kinder.
+
 
 \section{Persönlichkeitstypen und Entwicklung}
 Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeitstypen auf Y-Achse
@@ -183,7 +242,11 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
 			};
 			\addlegendentry{Border Collie}
-			
+						\addplot[mark=*, black]
+			coordinates{
+				(2,1.43)(3,1.73)(5,1.59)(6,1.52)(7,1.27)(8,1.3)(10,.98)(11,.89)(12,1.03)
+			};
+			\addlegendentry{Durchschnitt}
 		\end{axis}
 	\end{tikzpicture}
 	\caption{Entwicklung der Teamarbeitsfähigkeit}
@@ -214,6 +277,7 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
 			};
 			\addlegendentry{Border Collie}
+
 			
 		\end{axis}
 	\end{tikzpicture}
