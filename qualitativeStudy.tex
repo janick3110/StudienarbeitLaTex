@@ -160,9 +160,8 @@
 
 	Ebenfalls die normalisierten Werte verwendet auch Abbildung \ref{img:auswertung_typus}. Hierbei wird der Durchschnitt der einzelnen Typen pro Kategorie des Tests dargestellt. Auffallend ist besonders der Typ Border Collie und Elefant. Border Collie hat eine relativ geringe Durchschnittspunktzahl in den Testkategorien erreicht, Elefant dagegen erreichte in der Hälfte aller Kategorien den Maximalwert, in der anderen Hälfte kam dieser Typ nahe ans Maximum. Der Panda dagegen hat eine relativ hohe Streuung, die Werte liegen im kompletten Bereich von 0 bis inklusive 10.\\
 	\subsubsection{Am Ende des Workshops}
-	% Please add the following required packages to your document preamble:
-	% \usepackage[table,xcdraw]{xcolor}
-	% If you use beamer only pass "xcolor=table" option, i.e. \documentclass[xcolor=table]{beamer}
+	Aufgrund der Ergebnisse des \acrshort{bctt} mussten die Kinder am Ende einen schwereren Test bearbeiten, um eine bessere Aussage darüber treffen zu können, ob sie nun die Fähigkeiten des Computational Thinkings verbessern konnten.\\
+	Aufgrund eines vorzeitigen Ausstiegs aus der Studie nahm Heinz nicht mehr am \acrshort{cctt} teil.
 	\begin{table}[H]
 		\centering
 		\begin{tabular}{|
@@ -186,47 +185,80 @@
 			Sara      & 2 & 0 & 0 & 0 & 2 & 1 & 1 & 6  \\ \hline
 			Jonas     & 1 & 1 & 1 & 0 & 0 & 0 & 0 & 3  \\ \hline
 		\end{tabular}
-		\caption{Erreichte Punkte pro Kategorie des CTt}
+		\caption{Erreichte Punkte pro Kategorie des CCTt}
+		\label{tab:auswertungCCTT_kids}
 	\end{table}
+	Tabelle \ref{tab:auswertungCCTT_kids} zeigt das Abschneiden der Kinder in den jeweiligen Kategorien. Moritz und Benny stechen durch ihre hohen Punktzahlen deutlich hervor, ihnen gelang es in vielen Kategorien Punkte zu sammeln. Die restlichen Kinder dagegen taten sich eher schwer, viele Aufgaben korrekt zu beantworten, so dass diese nicht über ein Drittel der Punkte heraus kamen.
 
 
 
-	\begin{figure}[H]
+\pgfplotstableread[row sep=\\,col sep=&]{
+	Typ &Border Collie&Erdmannchen&Elefant&Panda\\
+	Typ 1     & 2.5  & 5 &10 &5 \\
+	Typ 2     & 3.33 & 5 &6.67 &0 \\
+	Typ 3    & 3.33 & 5 &5 &0\\
+	Typ 4   & 0 & 2.5 &5 &0\\
+	Typ 5   & 0  & 4 &5 &5\\
+	Typ 6      & 0 & 0 &2.5  &5\\
+	Typ 7 &0 & 0 &0 &3.33\\
+}\dataCCTT
+
+\begin{figure}[H]
+	\begin{tikzpicture}
+		\begin{axis}[ ybar,
+			bar width=.3cm,
+			width=\textwidth,
+			height=.5\textwidth,
+			legend style={at={(0.5,1)},
+				anchor=north,legend columns=-1},
+			symbolic x coords={Typ 1, Typ 2, Typ 3, Typ 4, Typ 5, Typ 6, Typ 7},
+			xtick=data,ymin=0,ymax=11,
+			ylabel={Anzahl erreichter Punkte}, xlabel = {Typ}]
+			\addplot[red!20!black,fill=red!80!white] table[x=Typ,y=Border Collie]{\dataCCTT};
+			\addplot[blue!20!black,fill=blue!80!white] table[x=Typ,y=Erdmannchen]{\dataCCTT};
+			\addplot[green!20!black,fill=green!80!white] table[x=Typ,y=Elefant]{\dataCCTT};
+			\addplot[yellow!20!black,fill=yellow!80!white] table[x=Typ,y=Panda]{\dataCCTT};
+			\addlegendentry{Border Collie}
+			\addlegendentry{Erdmännchen}
+			\addlegendentry{Elefant}
+			\addlegendentry{Panda}
+		\end{axis}
+	\end{tikzpicture}
+	\caption[Auswertung Durchschnitt]{Durchschn. Punkte pro Kategorie der einzelnen Typen, normalisiert}
+	\label{img:auswertung_typus_ctt}
+\end{figure}
+
+
+
+
+	In Abbildung \ref{img:auswertung_typus_ctt} zeigt sich, dass besonders die Elefanten und die Erdmännchen im Test deutlich besser abgeschnitten haben als die Kinder der anderen Persönlichkeitstypen. Interessant ist auch das Abschneiden des Pandas. Der Panda erzielte im \acrshort{bctt} eher weniger Punkte, ist aber der einzige Persönlichkeitstyp, welcher in den hinteren Kategorien gut abgeschnitten hat.
+
+	\begin{table}[H]
 		\centering
-		\begin{tikzpicture}
-			\begin{axis}[
-				ybar,ymin=0,
-				symbolic x coords={Typ 1, Typ 2, Typ 3, Typ 4, Typ 5, Typ 6, Typ 7},xtick={Typ 1, Typ 2, Typ 3, Typ 4, Typ 5, Typ 6, Typ 7
-				}, scale = 2,legend pos=outer north east
-				]
-				%Border Collie
-				\addplot[red!20!black,fill=red!80!white] coordinates
-				{(Typ 1,2.5) (Typ 2,2.5) (Typ 3,2.5) (Typ 4,0) (Typ 5,0) (Typ 6,0)(Typ 7,0)};
-				%Erdmännchen 9,166666667	8	7,142857143	7,5	5	6,666666667
-				\addplot[blue!20!black,fill=blue!80!white] coordinates
-				{(Typ 1,5) (Typ 2,3.75) (Typ 3,3.75) (Typ 4,1.25) (Typ 5,5) (Typ 6,0)(Typ 7,0)};
-				%Elefant
-				\addplot[green!20!black,fill=green!80!white] coordinates
-				{(Typ 1,10) (Typ 2,5) (Typ 3,3.75) (Typ 4,2.5) (Typ 5,5) (Typ 6,1.25)(Typ 7,0 )};
-				%Panda
-				\addplot[yellow!20!black,fill=yellow!80!white] coordinates
-				{(Typ 1,5) (Typ 2,0) (Typ 3,0) (Typ 4,0) (Typ 5,5) (Typ 6,2.5)(Typ 7, 2.5)};
-				\addlegendentry{Border Collie}
-				\addlegendentry{Erdmännchen}
-				\addlegendentry{Elefant}
-				\addlegendentry{Panda}
-			\end{axis}
-		\end{tikzpicture}
-		\caption[Auswertung Durchschnitt]{Durchschn. Punkte pro Kategorie der einzelnen Typen, normalisiert}
-		\label{img:auswertung_typus_ctt}
-	\end{figure}
-
-
-
+		\begin{tabular}{|
+				>{\columncolor[HTML]{C0C0C0}}l |l|l|l|}
+			\hline
+			Name & \cellcolor[HTML]{C0C0C0}Test& \cellcolor[HTML]{C0C0C0}Computer & \cellcolor[HTML]{C0C0C0}erreichte Punkte \\ \hline
+			Henriette & 20\%  & 20\%  & 19\%  \\ \hline
+			Moritz    & 80\%  & 90\%  & 76.2\% \\ \hline
+			Heinz     & -  & -  & -  \\ \hline
+			Benny     & 50\%  & 80\%  & 52.4\% \\ \hline
+			Lulu      & 50\%  & 80\%  & 28.5\%  \\ \hline
+			Mario     & -  & -  & -  \\ \hline
+			Sara      & 100\% & 100\% & 28.5\%  \\ \hline
+			Jonas     & 60\%  & 90\%  & 14.3\%  \\ \hline
+		\end{tabular}
+		\caption[Selbsteinschätzung der Kinder]{Selbsteinschätzung der Kinder in Prozent im Verhältnis zu erreichten Punktzahl in Prozent}
+		\label{tab:selbsteinschatzung}
+	\end{table}
+	
+	Der \acrshort{cctt} hatte am Ende des Tests zwei Skalen zwischen 0 und 10, so dass die Kinder ihr Abschneiden im Test und ihren Umgang mit Computern selber bewerten konnten. Tabelle \ref{tab:selbsteinschatzung} zeigt, dass die Selbsteinschätzung ihres Abschneidens im Test nur manchmal mit der erreichten Punktzahl korreliert. Häufiger dagegen schätzen die Kinder sich als besser ein als das Ergebnis ihres Tests. 
 
 
 
 \section{Parallelveranstaltung an der German University of Cairo}
+Gleichzeitig zu dieser Studie fand an der \acrlong{guc} eine Parallelveranstaltung statt, die sich mit einem ähnlichem Thema befasste. Hierzu wurden ebenso über mehrere Termine vier Kinder in ähnlichem Alter wie die Kinder in dieser Studie beobachtet. Bei dieser Parallelveranstaltung ging es jedoch nicht um die Teilnahme an einem Wettbewerb, sondern die Kinder beschäftigten sich mit computerrelvanten Themen wie zum Beispiel Smart Home. Die Beobachtungen der Kinder wurden anschließend mit den Autoren dieser Studie geteilt. Die Kinder aus Ägypten absolvierten jedoch weder den Persönlichkeitstest noch die Computational Thinking Tests, weshalb über Zusammenhänge von Persönlichkeit und Lernfähigkeit keine Aussage gemacht werden kann. Lediglich können kulturelle Vergleiche zwischen den beiden Studien gezogen werden.
+
 Was wurde gemacht? \\
 Wie viele Kinder --> 4 \\
 Aufbau eines Kurses?\\
