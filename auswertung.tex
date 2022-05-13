@@ -63,7 +63,7 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(3,2.5) (5,2.375) (6,2.25) (7,2.67) (8,2.375) (10,2.25) (12,2.25)
@@ -81,13 +81,13 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 \end{figure}
 
 
-Die Entwicklung von Jonas zeigt eine sehr schwankende Entwicklung der Kategorie Teamwork. Der Durchschnitt der Bewertungen aus dem vorherigen Kapiteln wies wie in der obenstehenden Abbildung zwar Spitzen von einer Bewertung von fast 2.7 auf, hatte aber auch einen dafür deutlich ausfallenden Abfall seiner Fähigkeiten im Team zu arbeiten. Von einer Entwicklung im Bereich des Teamworks kann daher nicht gesprochen werden.
+Die Entwicklung von Jonas zeigt eine sehr konstante Teamfähigkeit. Der Durchschnitt der Bewertungen aus dem vorherigen Kapiteln wies wie in der obenstehenden Abbildung zu sehen Werte um 2.5 auf, welche damit als sehr gut einzuschätzen sind. Von einer Entwicklung im Bereich des Teamworks kann aber aufgrund seiner Konstanz nicht gesprochen werden.
 
 \subsection{Mario}
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(2,1.94)(3,2.06)(6,2.06)(7,1.94)(8,1.94)(11,2.06)(12,1.94)
@@ -101,13 +101,13 @@ Die Entwicklung von Jonas zeigt eine sehr schwankende Entwicklung der Kategorie 
 
 
 
-Auch Mario zeigte bei seiner Entwicklung im Teamwork nur wenig Verbesserung, dafür aber Konstanz. Die Differenz zwischen Maxima und Minima betragen bei ihm nur 0.12. Das bedeutet, dass auch Mario keine Entwicklung im Bereich Teamwork aufweisen kann. Generell ist seine Teamfähigkeit im oberen Mittelfeld einzuordnen.
+Auch Mario zeigte bei seiner Entwicklung im Teamwork nur wenig Verbesserung, dafür aber ebenfalls Konstanz. Die Differenz zwischen Maxima und Minima betragen bei ihm nur 0.12. Das bedeutet, dass auch Mario keine Entwicklung im Bereich Teamwork aufweisen kann. Generell ist seine Teamfähigkeit im oberen Mittelfeld einzuordnen.
 
 \subsection{Sara}
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -124,7 +124,7 @@ Sara zeigte im Laufe der Kurse eine starke Verbesserung ihrer Teamfähigkeit. Vo
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(2,1.45)(3,1.31) (5,2.37) (6,2.06) (7,1.4) (8,1.33) (10,.57) (11,.5)(12,.54)
@@ -143,7 +143,7 @@ Zu Beginn der Kurse zeigte sich wie in Abbildung \ref{img:bennyDevelopment} zu s
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(2,2.21)(3,2)(5,2.31)(6,1.19)(7,1.75)(8,1.88)(10,1.79)(11,0.63)(12,0.63)
@@ -161,7 +161,7 @@ Henriette entwickelte ihre Teamfähigkeit während den Kursen nur sehr wenig in 
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(2,2.43)(3,2.43)(5,1.5)(6,1.2)(10,1.33)(11,.73)(12,.53)
@@ -180,7 +180,7 @@ Mithilfe den Bewertungen aus Kapitel \ref{sec:auswertungSubjektiv} konnte bei Mo
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(2,2.01)(3,2.43)(5,1.14)(6,1.5)(7,1)(8,.67)(10,1)(11,.43)(12,.38)
@@ -199,7 +199,7 @@ Der Trend von Lulus in Entwicklung im Bereich Teamwork ist negativ. Nach einer k
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,blue]
 			coordinates {
 				(3,1)(5,1.2)(6,1.25)(7,1.05)(8,1.3)(11,1)(12,1.08)
@@ -214,14 +214,11 @@ Während den Kursen zeigte Heinz wie in der Abbildung \ref{img:heinzDevelopment}
 
 
 \section{Persönlichkeitstypen und Entwicklung}
-Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeitstypen auf Y-Achse
-
-
 \subsection{Teamwork}
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east, ymin = 0, ymax = 3,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,yellow]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -239,18 +236,26 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 			\addlegendentry{Elefant}
 			\addplot[mark=*,red]
 			coordinates {
-				(2,.97)(3,2.28)(5,1.19)(6,2.15)(7,2.3)(8,2.16)(10,1.13)(11,1.03)(12,2.09)
+				(2,1.94)(3,2.28)(5,2.31)(6,2.15)(7,2.3)(8,2.16)(10,2.19)(11,2.06)(12,2.09)
 			};
 			\addlegendentry{Border Collie}
-						\addplot[mark=*, black]
+			\addplot[mark=*, black]
 			coordinates{
-				(2,1.43)(3,1.73)(5,1.59)(6,1.52)(7,1.27)(8,1.3)(10,.98)(11,.89)(12,1.03)
+				(2,2.01)(3,1.73)(5,1.59)(6,1.52)(7,1.45)(8,1.48)(10,1.38)(11,0.89)(12,1.03)
 			};
 			\addlegendentry{Durchschnitt}
 		\end{axis}
 	\end{tikzpicture}
 	\caption{Entwicklung der Teamarbeitsfähigkeit}
+	\label{img:teamDevelopment}
 \end{figure}
+Abbildung \ref{img:teamDevelopment} zeigt, wie sich das Verhalten der Kinder im Verlaufe der Termine entwickelt hat. Dazu wurde der Durchschnitt der Kinder eines Persönlichkeitstyps im Diagramm eingetragen. An Terminen, an denen ein Kind aufgrund Krankheit oder anderen Gründen nicht teilnehmen konnten, hatten keine Auswirkungen auf den Durchschnitt an diesem Termin, an diesen wurde dann der Durchschnitt aus den verbleibenden Kindern dieses Typs genommen.\\
+Zuerst die generelle Entwicklung der Kinder der Studie. Die Fähigkeit, im Team zu arbeiten, nimmt im Verlauf des Kurses ab. Nur hin und wieder verbessert sich die Bewertungen der Kinder, jedoch nur in sehr geringem Ausmaß.\\
+Da Sara das einzige Kind der Kategorie Panda ist, zeigt die obenstehende Abbildung, dass sich Pandas im Umgang mit Technologie im Rahmen der Studie ihre Teamfähigkeit verbessert haben. Da aber sie der einzige Panda der Studie ist, kann hier nicht generalisiert werden und auf andere Pandas geschlossen werden. Im Vergleich zu den anderen Kindern zeigt der Panda zwar eine Verbesserung, aber selbst das Maximum ihrer Teamfähigkeit übertrifft die Minima der anderen Kinder nur knapp und liegt durchgehend unter dem Durchschnitt. Ein Grund für das schlechte Abschneiden im Vergleich zu den Kindern kann ihre Schüchternheit sein, die während den Terminen oft an den Tag trat. Dadurch hatte sie Schwierigkeiten, sich im Team zu erweisen.\\
+Die Kinder der Typen Border Collie zeigten keine Entwicklung in ihrer Teamfähigkeit, dafür ist diese jedoch im Verlaufe des Kurses konstant. An vielen Tagen haben diese Kinder eine der höchsten durchschnittlichen Bewertungen, wie aus Abb. \ref{img:teamDevelopment} hervor geht. Insgesamt ist ihre Teamfähigkeit innerhalb der Studie an der \acrshort{dhbw} Karlsruhe als überdurchschnittlich zu bewerten. Ein Grund dafür ist unter anderem die Konstanz der beiden Kinder. Bei den Teamaufgaben arbeiteten die beiden oft zusammen, die Angehörigkeit des gleichen Typs kann ein Grund für die durchgehende Konstanz ihrer Teamfähigkeit ist.\\
+Die Kinder, die in ihrem Persönlichkeitstest als Ergebnis Elefant bekommen haben, verschlechterten sich in ihrer Teamfähigkeit deutlich. In den meisten Fällen ist ihre durchschnittliche Bewertung auch unterhalb des Durchschnitts der gesamten Gruppe. Grund hierfür wird vermutlich Unterforderung sein. Wie die Abbildungen \ref{img:auswertung_typus} und \ref{img:auswertung_typus_ctt} zeigen, erreichen die Kinder Höchstwerte in den einzelnen Kategorien, selbst bei dem schwierigen Test erzielten die Kinder sehr gute Ergebnisse. Für diese Kinder wäre es möglich, auch mit der nächsten Stufe der programmierbaren Roboter von Lego zu arbeiten. Die Unterforderung kann auch alterstechnisch bedingt sein. Moritz war während der Kurse bereits in der 4. Klasse und damit zwei Klassenstufen über den anderen Kindern.\\
+Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmännchen. Anders als die Elefanten lag ihr Durchschnitt öfters über dem Durchschnitt aller Kinder und auch meist höher als der der Elefanten. Auch hier kann wieder als möglicher Grund für die Verschlechterung die Unterforderung der Kinder genannt werden. Erdmännchen erzielten in den Tests gute Ergebnisse und auch Benny besuchte bereits die 4. Klasse, weshalb sein Wissen und seine geistigen Fähigkeiten auf einem höheren Niveau lagen. 
+
 
 \subsection{Divergentes Denken}
 \begin{figure}[H]
@@ -401,6 +406,9 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 	Für die Altersgruppe der Kinder, die sich während des Tests in der dritten Klassenstufe befanden, existieren seitens der Autoren des \acrshort{bctt} keine Vergleichsdaten. Die Kinder, die die dritte Stufe besuchten, übertrafen im Vergleich zu den Daten aus Tabelle \ref{tab:statisticsBCTT}. Diese Kinder schnitten im Durchschnitt besser ab und die Standardabweichung lag auch deutlich unter den von \citeauthor{bcct} angegebenen Daten. Die Stichprobe, die von den Autoren dieser Studienarbeit durchgeführt wurde, ist jedoch nicht sehr groß, weshalb die Aussagekraft über das Abschneiden der Kinder nicht sehr hoch ist.\\
 	Anders sieht es bei den Kindern der Klassenstufe Zwei aus. Wie aus der obenstehenden Tabelle zu entnehmen ist, lag der Durchschnitt, den die Kinder beim Bearbeiten des \acrlong{bctt} erzielten, zwar ebenfalls über dem Durchschnitt aus Tabelle \ref{tab:statisticsBCTT}, jedoch ist die Standardabweichung, die für diese Gruppe ermittelt wurde, doppelt so hoch als die Vergleichsdaten der Kinder aus Spanien. Wie aus der Tabelle \ref{tab:data} erkennbar ist, lag die Streuung der Ergebnisse der Kinder, die die Klassenstufe Zwei besuchten, in einem Bereich von 10 Punkten bis hin zur maximal erreichbaren Punktzahl von 25 Punkten.   
 	\subsection{CCTt}
+	Der \acrshort{cctt} fiel im Vergleich zum \acrshort{bctt} wie erwartet schlechter aus. Wenig überraschend dagegen ist das Abschneiden der Elefanten und auch das der Erdmännchen, da diese bereits im \acrshort{bctt} sehr gut abgeschnitten hatten. Ein großes Problem der Kinder war die Zeit. Das wird anhand der Punkte, die die Kinder in den einzelnen Kategorien erreicht haben, ersichtlich, da Kategorien, die weiter hinten angesiedelt waren, aufgrund der Zeit nicht bearbeitet wurden. Auffallend sind daher die Ergebnisse des Persönlichkeitstyps Panda, da dieser im \acrshort{bctt} schlechter abgeschnitten hatte. Da alle anderen Gruppen in den Typen weiter rechts auf der X-Achse weniger Punkte sammelten und auch bei Sara kein zufälliges bzw. unsortiertes Lösen der Aufgaben beobachtet werden konnte, gibt es hierfür einen anderen Grund. Beim Korrigieren des \acrshort{cctt} ist aufgefallen, dass weiter hinten Sara vermutlich aus Zeitgründen immer die gleiche Antwort angekreuzt hat. Dadurch hatte sie viel Glück und die Antworten waren sogar teilweise richtig, jedoch verfälschte das das Ergebnis. Also wurde um Glücksantworten zu filtern für falsche Fragen ein Minuspunkt berechnet, für nicht beantwortete Fragen kein Punkt. So kann überprüft werden, ob die Kinder wirklich die Antworten wussten oder eben Glückstreffer dabei waren. Dabei ergab sich nach Abzug der falschen Punkte die untenstehenden Werte.
+	
+	
 	\pgfplotstableread[row sep=\\,col sep=&]{
 		Name &Ohne Abzug &Mit Abzug \\
 		Henriette     & 4  & 1 \\
@@ -437,6 +445,8 @@ Liniendiagramm mit Termin auf X-Achse und Durchschnittswert der Persönlichkeits
 		\label{img:wrongAnswerCorrection}
 	\end{figure}
 
+	Auffallend ist, wie bereits vermutet, das Ergebnis von Sara. Statt voher insgesamt sechs korrekt beantworteten Fragen hatte sie nun ein Ergebnis von -6, also zwölf falsch beantwortete Fragen. Natürlich kann hier angemerkt werden, dass die Kinder nicht wussten, dass wir für falsche Fragen Punkte abziehen, ihre Anweisungen waren lediglich: \glqq Es ist nicht wichtig, dass du alle Fragen beantwortest\grqq. Deshalb könnte dies anders ausfallen, sollten die Kinder vorher darüber informiert werden. Bei dem Großteil der Kinder zeigte sich jedoch, dass die Fragen, die sie beantwortet hatten, korrekt waren und Fragen, die sie nicht beantworten konnten, übersprungen wurden. Die Abzüge waren meist nur sehr gering. Lediglich die 12-Punkte-Differenz bei Sara zeigt, dass die Ergebnisse aus \ref{img:auswertung_typus_ctt} verfälscht sind und man daraus nicht schließen kann, dass sie in diesen Bereichen besser ist als die anderen Kinder.\\
+	Aufgrund der nicht zufälligen Bearbeitung kann für weiter hinten angesiedelte Typen auch kein Vergleich zwischen den einzelnen Typen gezogen werden, lediglich kann bewertet werden, wie gut die Kinder in den ersten drei Kategorien abschnitten. Über den zeitlichen Verlauf kann gesagt werden, dass Kinder, die in den hinteren Aufgaben mehr Punkte holten, in den vorderen Kategorien besser sind als Kinder, die weiter hinten weniger Punkte holten, da sich daraus schließen lässt, dass die besseren Kinder weniger Zeit bei den ersten Aufgaben in Anspruch nehmen mussten. Dies würde bedeuten, dass die Kinder der beiden Typen Elefant und Erdmännchen in den vorderen Kategorien besser waren, im direkten Vergleich sind die Elefanten jedoch besser, da diese im Durchschnitt mehr Punkte erzielten. Innerhalb der beiden Typen gibt es jedoch große Diskrepanzen zwischen den einzelnen Kindern, beispielsweise erzielte Moritz in fast allen Kategorien Punkte, während Lulu nur in den ersten beiden Kategorien Punkte sammeln konnte. Dasselbe ist auch zwischen Benny und Henriette sichtbar, auch hier zeigen sich Differenzen zwischen den beiden Kindern in den gesammelten Punkten.
 
 
 	
