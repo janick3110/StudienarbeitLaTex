@@ -53,7 +53,9 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 	\end{tikzpicture}
 
 	\caption[Durchschnittliche Bewertung der Formulierungen]{Durchschnittliche Bewertung der Formulierungen zweier unabhängig voneinander bewertenden Person}
+	\label{img:verificationMetric}
 \end{figure}
+Abbildung \ref{img:verificationMetric} zeigt wie eindeutig die von Reem Ayman definierte Metrik ist. Je weiter die beiden Balken von Timo Steidinger und Reem Ayman auseinanderliegen, umso schlechter funktioniert die Skala. 
 
 
 
@@ -264,7 +266,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,yellow]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -297,7 +299,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,yellow]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -329,7 +331,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,yellow]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -361,7 +363,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,yellow]
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -394,10 +396,10 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,red]%Germany
-			coordinates {
-				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
+			coordinates{
+				(2,2.01)(3,1.73)(5,1.59)(6,1.52)(7,1.45)(8,1.48)(10,1.38)(11,0.89)(12,1.03)
 			};
 			\addlegendentry{DHBW Karlsruhe}
 			\addplot[mark=*,black]
@@ -414,7 +416,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,red]%Germany
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -434,7 +436,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,red]%Germany
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -454,7 +456,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,red]%Germany
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
@@ -474,7 +476,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
-		\begin{axis}[legend pos=outer north east]
+		\begin{axis}[legend pos=outer north east,xlabel={Nummer des Termins},ylabel={durchschnittliche Bewertung}]
 			\addplot[mark=*,red]%Germany
 			coordinates {
 				(3,.47) (5,.47) (6,.5) (7,.38) (8,0.93) (11,.88) (12,.93)
