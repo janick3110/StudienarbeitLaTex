@@ -29,34 +29,46 @@ Die definierte Skalen sind in der untenstehenden Tabelle definiert. Das Bilden d
 	\centering
 	\begin{tikzpicture}
 		\begin{axis}[
-			ybar,legend pos=outer north east,ymin=0,scale = 1.25,
+			ybar,ymin=0,
 			symbolic x coords={Teamwork, divergentes Denken, Emergentes Denken, Kreative Haltung, Konvergentes Denken},
 			xtick={Teamwork, divergentes Denken, Emergentes Denken, Kreative Haltung, Konvergentes Denken},
-			xticklabel style={rotate=45}
+			xticklabel style={rotate=45}, legend style={at={(0.5,1)},
+				anchor=north,legend columns=-1},
 			]
 			%Timo
 			\addplot coordinates
-			{(Teamwork, 1.32)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
+			{(Teamwork, 1.32)(divergentes Denken,1.27)(Emergentes Denken, 1.4)(Kreative Haltung, 1.51)(Konvergentes Denken,1.51)};\label{diag:Timo}
 			%Durchschnitt
 			\addplot coordinates
-			{(Teamwork, 1.2)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
+			{(Teamwork, 1.26)(divergentes Denken,1.26)(Emergentes Denken, 1.28)(Kreative Haltung, 1.52)(Konvergentes Denken,1.43)}; \label{diag:average}
 			%Reem
 			\addplot coordinates
-			{(Teamwork, 1.07)(divergentes Denken,0)(Emergentes Denken, 0)(Kreative Haltung, 0)(Konvergentes Denken,0)};
-
+			{(Teamwork, 1.2)(divergentes Denken,1.24)(Emergentes Denken, 1.16)(Kreative Haltung, 1.53)(Konvergentes Denken,1.35)};\label{diag:Reem}
 			
-			\addlegendentry{Timo Steidinger}			
-			\addlegendentry{Durchschnitt}
-			\addlegendentry{Reem Ayman}
-
 		\end{axis}
 	\end{tikzpicture}
 
 	\caption[Durchschnittliche Bewertung der Formulierungen]{Durchschnittliche Bewertung der Formulierungen zweier unabhängig voneinander bewertenden Person}
 	\label{img:verificationMetric}
 \end{figure}
-Abbildung \ref{img:verificationMetric} zeigt wie eindeutig die von Reem Ayman definierte Metrik ist. Je weiter die beiden Balken von Timo Steidinger und Reem Ayman auseinanderliegen, umso schlechter funktioniert die Skala. 
+Abbildung \ref{img:verificationMetric} zeigt wie eindeutig die von Reem Ayman definierte Metrik ist. Je weiter die beiden Balken von Timo Steidinger und Reem Ayman auseinanderliegen, umso schlechter funktioniert die Skala. Die genauen Differenzen aus der obigen Abbildung sind als durchschnittliche Abweichung in Tabelle \ref{tab:differences} aufgeführt.
 
+\begin{table}[H]
+	\centering
+	\begin{tabular}{|
+			>{\columncolor[HTML]{C0C0C0}}l |c|}
+		\hline
+		Kategorie & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}durchschnittliche Abweichung} \\ \hline
+		Teamwork            & 0.12 \\ \hline
+		Divergentes Denken  & 0.03 \\ \hline
+		Emergentes Denken   & 0.24 \\ \hline
+		Kreative Haltung    & 0.02 \\ \hline
+		Konvergentes Denken & 0.16 \\ \hline
+		Mittlere Abweichung & 0.10 \\ \hline
+	\end{tabular}
+	\caption{Durchschnittliche Abweichung der beiden Bewertungen}
+	\label{tab:differences}
+\end{table}
 
 
 \section{Entwicklung der Kinder}
@@ -523,7 +535,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 		Heinz    & 0 & 0\\
 		Benny   & 11 & 11\\
 		Lulu   & 6  & 4\\
-		Mario      & 0 & 0\\
+		Mario      & 3 & -5\\
 		Sara &6 & -6\\
 		Jonas&3 & -2\\
 	}\mydata
@@ -553,8 +565,6 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{figure}
 
 	Auffallend ist, wie bereits vermutet, das Ergebnis von Sara. Statt voher insgesamt sechs korrekt beantworteten Fragen hatte sie nun ein Ergebnis von -6, also zwölf falsch beantwortete Fragen. Natürlich kann hier angemerkt werden, dass die Kinder nicht wussten, dass wir für falsche Fragen Punkte abziehen, ihre Anweisungen waren lediglich: \glqq Es ist nicht wichtig, dass du alle Fragen beantwortest\grqq. Deshalb könnte dies anders ausfallen, sollten die Kinder vorher darüber informiert werden. Bei dem Großteil der Kinder zeigte sich jedoch, dass die Fragen, die sie beantwortet hatten, korrekt waren und Fragen, die sie nicht beantworten konnten, übersprungen wurden. Die Abzüge waren meist nur sehr gering. Lediglich die 12-Punkte-Differenz bei Sara zeigt, dass die Ergebnisse aus \ref{img:auswertung_typus_ctt} verfälscht sind und man daraus nicht schließen kann, dass sie in diesen Bereichen besser ist als die anderen Kinder.\\
+	Ebenso ist auch das Ergebnis von Mario. Auch er verlor einen Großteil seiner Punkte durch den Abzug falscher Antworten. Er hatte den Test nach nicht einmal sieben Minuten beendet und einige Aufgaben übersprungen, bei denen er keine Antwort wusste. Statt die 13 Minuten, die er noch hatte, zu nutzen und seine Antworten zu überprüfen, gab er ab und schnitt dementsprechend schlecht ab. Hier spielte also weniger die Zeit eine Rolle, als das Wissen bzw. die Fähigkeit, das Computational Thinking anzuwenden.\\
 	Aufgrund der nicht zufälligen Bearbeitung kann für weiter hinten angesiedelte Typen auch kein Vergleich zwischen den einzelnen Typen gezogen werden, lediglich kann bewertet werden, wie gut die Kinder in den ersten drei Kategorien abschnitten. Über den zeitlichen Verlauf kann gesagt werden, dass Kinder, die in den hinteren Aufgaben mehr Punkte holten, in den vorderen Kategorien besser sind als Kinder, die weiter hinten weniger Punkte holten, da sich daraus schließen lässt, dass die besseren Kinder weniger Zeit bei den ersten Aufgaben in Anspruch nehmen mussten. Dies würde bedeuten, dass die Kinder der beiden Typen Elefant und Erdmännchen in den vorderen Kategorien besser waren, im direkten Vergleich sind die Elefanten jedoch besser, da diese im Durchschnitt mehr Punkte erzielten. Innerhalb der beiden Typen gibt es jedoch große Diskrepanzen zwischen den einzelnen Kindern, beispielsweise erzielte Moritz in fast allen Kategorien Punkte, während Lulu nur in den ersten beiden Kategorien Punkte sammeln konnte. Dasselbe ist auch zwischen Benny und Henriette sichtbar, auch hier zeigen sich Differenzen zwischen den beiden Kindern in den gesammelten Punkten.\\
-	Wie auch bei den Entwicklungen schneiden die beiden Typen auch aufgrund der Altersunterschiede der Kinder deutlich besser ab, da diese in ihrer geistigen Entwicklung aufgrund des Alters fortgeschrittener sind und somit mit diesen schwereren Fragen besser klar kommen. Der \acrshort{cctt} ist zudem genau für diese Altersgruppe ausgelegt, in der sich Benny und Moritz befinden, weshalb sie hier einen Vorteil im Vergleich zu den anderen Kindern haben. 
-
-
-	
+	Wie auch bei den Entwicklungen schneiden die beiden Typen auch aufgrund der Altersunterschiede der Kinder deutlich besser ab, da diese in ihrer geistigen Entwicklung aufgrund des Alters fortgeschrittener sind und somit mit diesen schwereren Fragen besser klar kommen. Der \acrshort{cctt} ist zudem genau für diese Altersgruppe ausgelegt, in der sich Benny und Moritz befinden, weshalb sie hier einen Vorteil im Vergleich zu den anderen Kindern haben.
