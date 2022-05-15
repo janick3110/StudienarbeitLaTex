@@ -1,12 +1,9 @@
 \chapter{Grundlagen}
 
-In den folgenden Abschnitten werden Grundlagen gelegt, welche für das weitere Verständnis der Studienarbeit benötigt werden.
+\section{Die FIRST LEGO League}
+Bei der FIRST LEGO League handelt es sich um Wettbewerbe, die von einer Kooperation von \gls{Lego} und \gls{First} organisiert werden. Das Ziel dieser Wettbewerbe ist es Kinder und Jugendliche für eine Laufbahn im \gls{MINT}-Bereich zu motivieren. Mittlerweile besteht die FIRST LEGO League aus zwei Wettbewerben. Die FIRST LEGO League Explore für Kinder im Grundschulalter (6-10 Jahre) und die FIRST LEGO League Challenge für Kinder und Jugendliche der weiterführenden Schulen. Diese beiden Wettbewerbe haben ein gemeinsames Saisonthema, welches in dieser Saison (2021/22) das Thema \textit{Transport} war.
 
-\section{LEGO}
-\gls{Lego}
-Hier steht nachher Zeugs, was mit Lego zu tun hat. Dazu gehört die WeDo-Kästen und auf jeden Fall der Wettbewerb, zumindest sollte definiert werden, warum die Kinder eigentlich mitmachen.
-
-\section{Das Baukastensystem LEGO WeDo2.0}
+\section{Das Baukastensystem LEGO WeDo2.0} \label{Wedo}
 Zur Durchführung der Kurse wurde der Baukasten LEGO WeDo 2.0 verwendet. Dessen Eigenschaften und Konzepte sollen hier erläutert werden.
 \subsection{Das Konzept des Baukastens}
 Die LEGO WeDo Produktreihe zielt darauf ab, Kindern spielerisch Inhalte der Naturwissenschaft und Technik, sowie grundlegende Programmierkonzepte zu vermitteln. Hierfür werd von LEGO Handbücher für Lehrer, Leitfäden sowie die Software mit der die Elektronischen Bauteile programmiert werden können zur Verfügung gestellt. Somit richten sich die Baukästen speziell an Schulen und andere Bildungseinrichtungen. Zu den Baukästen gibt es jeweils ein äquivalentes Produkt für zuhause, welches jedoch weniger technische Bauteile (Balken, Achsen, Zahnräder) sondern mehr bunte und dekorative Bauteile enthält.\\ 
@@ -23,9 +20,35 @@ Dahingegen verfügt der verwendete WeDo 2.0 Baukasten über zwei Sensoren und ei
 \subsection{Inhalt}
 
 \subsection{Die Projektbibliothek}\label{Projektbibliothek}
+Das Programm zu dem WeDo 2.0 Baukasten bietet eine Projektbibliothek (Abb. \ref{img:projects}). Die Projekte innerhalb dieser haben alle einen ähnlichen Aufbau. Das Thema der Projekte ist aus dem \gls{MINT}-Bereich. Zu diesem werden den Kindern zunächst einige Fragen gestellt. Anschließend können sich die Kinder ein kleines Video zu dem Thema ansehen, welches die Kinder auf das Thema einstimmen soll. Beispielsweise ist in dem Video zum Thema \textit{Standfestigkeit} eine Erdkugel mit Kontinentalplatten, ein Seismograph, Aufnahmen von Erdbeben und verschiedene Gebäude, wie Hochhäuser und Pyramiden, zu sehen.\\
+Anschließend dürfen die Kinder das Modell zu dem Thema bauen. Das in \ref{img:subject} gezeigte Modell zum Thema \textit{Standfestigkeit} stellt einen vereinfachten Erdbebensimulator dar, mit drei Modellgebäuden.\\
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Projects.png}}
+	\caption[Die Programmbibliothek]{Die Programmbibliothek}
+	\label{img:projects}
+\end{figure} 
 
-\subsection{Programmieren mit der WeDo 2.0 Software}
-Um für Kinder leichter greifbar zu sein, wurde zum programmieren der Modelle eine Oberfläche gewählt, bei der einzelne Programmblöcke hinter einander gezogen werden. Die Abfolge der Blöcke ergibt damit das fertige Programm. Nach ihrer jeweiligen Funktion lassen sich die Programmblöcke in Kategorien einteilen. Eine Einteilung ist von LEGO durch die Farbgebung der Programmblöcke bereits gegeben. \\
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/Model.png}}
+	\caption[Das Modell zum Thema Standfestigkeit]{Das Modell zum Thema \textit{Standfestigkeit}}
+	\label{img:subject}
+\end{figure} 
+
+Nach dem Bau wird das Modell von den Kindern programmiert. Hierzu steht den Kindern eine Programmvorlage zur Verfügung, welche sie nachbauen können. Diese ist für das Projekt \textit{Standfestigkeit} in \ref{img:programtemplate} zu sehen. Dabei wird Motorgeschwindigkeit, welche die Erdbebenstärke simuliert, bei jedem Durchlauf um eins erhöht und der Motor für zwei Sekunden gedreht.\\
+Daraufhin sollen die Kinder das Modell mit dem Programm ausprobieren.\\
+Zum Abschluss kann den Kindern noch eine Kompetitive Aufgabe gegeben werden, bei der sie das Modell und Programm verbessern sollen. Bei dem Thema Standfestigkeit ist das die Aufgabe, ein Gebäudemodell zu entwerfen, welches der größten Erdbebenstärke standhält und gleichzeitig am höchsten ist.
+
+\begin{figure}[htbp!]
+	\centering
+	\fbox{\includegraphics[width=0.4\textheight,angle=0]{img/programtemplate.png}}
+	\caption[Die Programmvorlage]{Die Programmvorlage bei dem Thema \textit{Standfestigkeit}}
+	\label{img:programtemplate}
+\end{figure} 
+
+\subsection{Programmieren mit WeDo 2.0}\label{WedoSoftware}
+Um für Kinder leichter greifbar zu sein, wurde zum programmieren der Modelle eine Oberfläche gewählt, bei der einzelne Programmblöcke hintereinander gezogen werden. Die Abfolge der Blöcke ergibt damit das fertige Programm. Nach ihrer jeweiligen Funktion lassen sich die Programmblöcke in Kategorien einteilen. Eine Einteilung ist von LEGO durch die Farbgebung der Programmblöcke bereits gegeben. \\
 Einige Blöcke benötigen einen zusätzlichen Wert, der ihnen übergeben werden muss. Diese sind mit einer halbkreisförmigen Öffnung an der Unterseite versehen. Die Blöcke, welche diese Werte liefern, hingegen sind mit einer halbkreisförmigen Wölbung versehen. 
 
 \subsubsection{Die Aktionsblöcke}
@@ -91,7 +114,7 @@ Die
 
 
 \section{Die Kurse}
-
+\subsection{title}
 
 
 
