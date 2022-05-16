@@ -70,19 +70,56 @@ Abbildung \ref{img:verificationMetric} zeigt wie eindeutig die von Reem Ayman de
 	\label{tab:differences}
 \end{table}
 
-<<<<<<< HEAD
- die Bewertung der Kinder wurden insgesamt bis zu 252 Felder pro Kind analysiert und in Zahlen konvertiert, dies wurde insgesamt acht Mal durchgeführt, so dass am Ende bis zu 2016 Felder bewertet wurden. Dies ist nur die Maximalangabe, da Kinder an Terminen nicht anwesend waren oder leere Felder in den Ausgangsbögen vorhanden waren, weshalb nicht alle Felder bewertet werden konnten. Mithilfe der obigen Ergebnisse kann nun verifiziert werden, ob das definierte Bewertungsschema gut funktioniert. Dies soll mithilfe der Interrater-Reliabilität überprüft werden.\\
-bular}{|
-HTML]{C0C0C0}}l |c|c|}
-cellcolor[HTML]{C0C0C0}Anzahl bewerteter Felder} & \multicolumn{1}{l|}{\cellcolor[HTML]{C0C0C0}Anzahl Übereinstimmungen} \\ \hline
-172 \\ \hline
+\begin{table}[H]
+	\centering
+	\begin{tabular}{l|l|l|l|l|l|l|}
+		\cline{2-7}
+		&
+		\cellcolor[HTML]{C0C0C0}0 &
+		\cellcolor[HTML]{C0C0C0}1 &
+		\cellcolor[HTML]{C0C0C0}2 &
+		\cellcolor[HTML]{C0C0C0}3 &
+		\cellcolor[HTML]{C0C0C0}4 &
+		\cellcolor[HTML]{C0C0C0}Summe \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}0}     & 286 & 43  & 6   & 2   & 0  & 337 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}1}     & 38  & 100 & 35  & 10  & 1  & 184 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}2}     & 2   & 10  & 224 & 72  & 9  & 317 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}3}     & 1   & 5   & 77  & 70  & 26 & 179 \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}4}     & 0   & 0   & 0   & 1   & 2  & 3   \\ \hline
+		\multicolumn{1}{|l|}{\cellcolor[HTML]{C0C0C0}Summe} & 327 & 158 & 342 & 155 & 38 & 682 \\ \hline
+	\end{tabular}
+	\caption{Übereinstimmungsmatrix}
+	\label{tab:agreement}
+\end{table}
+
+ 
+ Insgesamt wurden 1020 Bewertungen durch Zahlen ersetzt. Die Zahlen in der Tabelle \ref{tab:agreement} zeigen die Übereinstimmungsmatrix nach Abschluss der Bewertungen. Diese Matrix dient zur Verifikation der Bewertungen aus dem vorherigen Kapitel. Dazu wird die sogenannte Interrater-Reliabilität ermittelt. Da für diese Arbeit zwei verschiedene Bewerter die Bewertung durchgeführt haben, wird das Ergebnis der Interrater-Reliabilität nach Jacob Cohen berechnet:\cite{cohen_1960}\\
+ 
+ \begin{figure}[H]
+ 	\centering
+ 	\begin{equation}
+ 		\kappa = \frac{p_{0} - p_{c}}{1 - p_{c}}
+ 	\end{equation}
+ 	\begin{equation}
+ 		p_{0} = (682/1020) = 0.67
+ 	\end{equation}
+ 	\begin{equation}
+ 		p_{e} = (0.32)^{2} + (0.15)^{2} + (0.34)^{2} + (0.15)^{2} + (0.04)^{2} =  0.26
+ 	\end{equation}
+ 	\begin{equation}
+ 		\kappa = \frac{0.67 - 0.26}{1 - 0.26} = 0.74
+ 	\end{equation}
+ 	\caption{Berechnung der Interrater-Reliabilität}
+ 	\label{img:calc}
+ \end{figure}
+
+Mithilfe von Kappa kann nun bewertet werden, wie gut die entwickelte Metrik ist. Dazu wird die Bewertung von Kappa nach \citeauthor{Landis77} verwendet. Diese besagt, ein Kappa kleiner als 0 ist ein \glqq Poor Agreement\grqq, ein Kappa zwischen 0.00 und 0.2 gilt als eine leichte Übereinstimmung. Ein Kappa, welches zwischen 0.21 und 0.4 liegt, wird als \glqq Fair Agreement\grqq bezeichnet und sobald der Wert zwischen 0.41 und 0.6 liegt, wird von einer moderaten Übereinstimmung gesprochen. Das Kappa des oben definierten Schemas wird nach \citeauthor{Landis77} als ein "Substantial Agreement" bezeichnet, da es im Bereich von 0.61 und 0.8 liegt, wie die Berechnung oben zeigt. Sollte der Wert des Kappas zwischen 0.81 und 1.00 liegen, so wird von einer fast perfekten Übereinstimmung gesprochen.\\
+\noindent
+\cite{Landis77}
 
 
 
 
-stimmungen bei der Bewertung}
-7855e1c5d97e71e7349c1cc168e6325ae755c6ff
-onas}
 \begin{figure}[H]
 	\centering
 	\begin{tikzpicture}
@@ -311,7 +348,8 @@ Henriette entwickelte ihre Teamfähigkeit während den Kursen nur sehr wenig in 
 	\label{img:moritzDevelopment}
 	
 \end{figure}
-Mithilfe den Bewertungen aus Kapitel \ref{sec:auswertungSubjektiv} konnte bei Moritz ein negativer Trend festgestellt werden. Aus der obenstehenden Abbildung wird sichtbar, dass Moritz sich nicht verbessert, dafür aber in fast allen Terminen eine schlechtere Teamfähigkeit aufwies als an dem Termin davor. Seine Bewertungen für die ersten Termine lag bei 2.43, der höchste Wert von allen teilnehmenden Kindern. BBei Betarchtung des divergenten Denkens fällt auf, dass 
+Mithilfe den Bewertungen aus Kapitel \ref{sec:auswertungSubjektiv} konnte bei Moritz ein negativer Trend festgestellt werden. Aus der obenstehenden Abbildung wird sichtbar, dass Moritz sich nicht verbessert, dafür aber in fast allen Terminen eine schlechtere Teamfähigkeit aufwies als an dem Termin davor. Seine Bewertungen für die ersten Termine lag bei 2.43, der höchste Wert von allen teilnehmenden Kindern.\\
+Im Bereich des divergenten Denkens erzielt Moritz bis ungefähr zur Hälfte einen konstanten Wert nahe 3, danach fällt der Wert innerhalb der letzten drei Termine auf einen Wert nahe 0 ab. Betrachtet man das emergente Denken sieht man bis auf einen starken Ausreißer Werte um die 2.5. Moritz Kreativität liegt zu Beginn bei ungefähr 2.5 und sinkt danach im Verlauf ein wenig bis auf letztendlich 2 ab. Auch im Bereich des konvergenten Denkens sieht man einen relativ konstanten Verlauf mit leichten Verbesserungen, aber zum ende hin pendelt sich der Wert wieder auf 2.5 ein. Insgesamt zeigt Moritz in den meisten Beobachtungskriterien im verlauf einen Abfall der Werte, trotzdem befinden sich seine Endwerte in fast allen Bereichen in einem guten Bereich. 
 
 
 
@@ -350,7 +388,9 @@ Mithilfe den Bewertungen aus Kapitel \ref{sec:auswertungSubjektiv} konnte bei Mo
 	\caption{Entwicklung von Lulu}
 	\label{img:luluDevelopment}	
 \end{figure}
-Der Trend von Lulus Entwicklung im Bereich Teamwork ist negativ. Nach einer kleinen Steigerungsphase zu Beginn, verschlechtert sich ihre Teamfähigkeit in den meisten Kursen. Hin und wieder sind Verbesserungen im Vergleich zu den voherigen Terminen sichtbar, diese knüpfen jedoch nicht mehr an die guten Leistungen im Bereich Teamwork an.
+Der Trend von Lulus Entwicklung im Bereich Teamwork ist negativ. Nach einer kleinen Steigerungsphase zu Beginn, verschlechtert sich ihre Teamfähigkeit in den meisten Kursen. Hin und wieder sind Verbesserungen im Vergleich zu den voherigen Terminen sichtbar, diese knüpfen jedoch nicht mehr an die guten Leistungen im Bereich Teamwork an. Bei Betrachtung des divergenten Denkens steigert sich Lulu bis zur Hälfte des Projekts auf einen Wert von 2.5, danach fällt der Trend negativ ab und ist gegen Ende nahe 0.
+Was das emergente Denken angeht zeigt sich ein konstanter Verlauf von 2 bis zum letzten Drittel der Beobachtungen, danach fällt auch diese Kategorie stark ab und ist ebenfalls nah an 0. Im Bereich der Kreativität beobachtet man bei Lulu starke Schwankungen, so liegt ihr Maximum bei 2.5 , wohingegen das Minimum bei 0 liegt. Dazu lässt sich sagen, dass sie allgemein einen Abwärtstrend im Bereich der Kreativität hat. Das konvergente Denken hat einen Anfangswert von 1 und steigt danach auf 2.5 an, danach fällt es wieder auf das Anfangsniveau von 1 ab. Allgemein sieht man bei Lulu starke Schwankungen, gegen Ende hingegen fallen aber alle Werte nahe 1. 
+
 
 
 
@@ -390,7 +430,7 @@ Der Trend von Lulus Entwicklung im Bereich Teamwork ist negativ. Nach einer klei
 	\label{img:heinzDevelopment}
 	
 \end{figure}
-Während den Kursen zeigte Heinz wie in der Abbildung \ref{img:heinzDevelopment} dargestellt eine konstante Teamfähigkeit. Für ihn ist keine Entwicklung in diesem Bereich sichtbar, nur leichtere Schwankungen wurden notiert. Jedoch liegen seine Werte nur knapp über 1.0, damit liegt er sehr weit hinten im Vergleich zu den Bestwerten der anderen Kinder.
+Während den Kursen zeigte Heinz wie in der Abbildung \ref{img:heinzDevelopment} dargestellt eine konstante Teamfähigkeit. Für ihn ist keine Entwicklung in diesem Bereich sichtbar, nur leichtere Schwankungen wurden notiert. Jedoch liegen seine Werte nur knapp über 1.0, damit liegt er sehr weit hinten im Vergleich zu den Bestwerten der anderen Kinder. Heinz divergentes Denken zeigt bis auf zwei Ausreißer nach unten konstant einen wert von ungefähr 2.75 an. Sein emergentes Denken hingegen verändert sich sprunghaft. Hier ist mit leichten Rückfällen eine stetige Steigung zu erkennen, so beträgt der Unterschied zwischen Maximum und Minimum 1.5. Bei Betrachtung der Kreativität sind zwar ein Anstieg mit anschließendem Abfall sichtbar, jedoch sind die Werte mit einem Maximum von 1.25 eher niedrig. Auf der anderen Seite sieht man im Beobachtungsparameter konvergentes Denken einen Anstieg von anfangs 0.5 auf gegen Ende ungefähr 2. Alles in allem zeigt Heinz in den meisten Kategorien, einen Aufwärtstrend. Im Bereich des emergenten und konvergenten Denkens erreicht er zum Schluss die höchsten Ausschläge. 
 
 
 \section{Persönlichkeitstypen und Entwicklung}
@@ -472,7 +512,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 	\end{tikzpicture}
 	\caption{Entwicklung des divergenten Denkens}
 \end{figure}	
-
+Im Bereich des divergenten Denkens schneiden die Erdmännchen zu Beginn am besten und die Pandas am schlechtesten ab. Im Verlauf ist bei den Erdmännchen und den Elefanten ein starker Abwärtstrend erkennbar., Am Ende liegen alle Persönlichkeitstypen bei Werten unter 1 , wobei die Border Collies noch am besten abschneiden.
 
 \subsection{Emergentes Denken}
 \begin{figure}[H]
@@ -509,6 +549,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 	\end{tikzpicture}
 	\caption{Entwicklung des emergenten Denkens}
 \end{figure}	
+Betrachtet man das emergente Denken fällt auf,  dass die Border Collies mit Werten über 2 deutlich über den anderen Persönlichkeitstypen liegen. Die Pandas schneiden hier am schlechtesten ab und kommen nicht über einen Wert von 1 hinaus. Auch die Elefanten, die zu Beginn Werte nahe der Border Collies erzielen, liegen gegen Ende bei einem Wert unter 1. Im Durchschnitt lässt sich auch ein negativer Trend beobachten, hier liegt der Unterschied zwischen dem Maximum zu Beginn und dem Minimum gegen Ende bei knapp 1.25.
 
 
 \subsection{Kreative Haltung}
@@ -546,7 +587,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 	\end{tikzpicture}
 	\caption{Entwicklung der kreativen Haltung}
 \end{figure}	
-	
+Im Bereich der kreativen Haltung schneiden die Pandas erneut am schlechtesten ab, sie pendeln sich nach einer leichten Verbesserung zu Beginn bei einem Wert um die 0.75 ein. Die Erdmännchen starten mit einem Wert von 2.5 am besten fallen aber im Verlauf um 1 auf ungefähr 1.5 ab. Die Erdmännchen starten bei 2 und pendeln sich mit leichten Ausreißern auf 2.25 ein. Die Elefanten bewegen sich im Mittelfeld und liegen leicht unter dem Durchschnitt, welcher im Bereich von 1.5 und 2 liegt. Allgemein ist in diesem Bereich bei keiner Gruppe eine positive Veränderung zu erkennen, ausgenommen der Pandas.	
 	
 \subsection{Konvergentes Denken}
 \begin{figure}[H]
@@ -583,7 +624,7 @@ Ebenso eine Verschlechterung zeigten die Kinder des Persönlichkeitstyps Erdmän
 	\end{tikzpicture}
 	\caption{Entwicklung des konvergenten Denkens}
 \end{figure}	
-
+Beim konvergenten Denken fällt auf, dass die Border Collies im kompletten Zeitablauf über allen anderen Persönlichkeitstypen liegen, sie halten sich konstant bei Werten um die 2.5. Die Elefanten bewegen sich nahe am Durchschnitt und erreichen im Maximum sogar das Niveau der Border Collies. Die Erdmännchen liegen im kompletten Verlauf unter dem Durchschnitt und haben einen negativen Abfall verglichen zum Anfangsniveau. Die Pandas haben einen konstanten Verlauf von 0.5. Insgesamt lässt sich hier sagen, dass es große Unterschiede zwischen den einzelnen Gruppen gibt und wenige Schnittpunkte unter den Gruppen gibt
 \section{Herkunft und Entwicklung}
 Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Vergleichsdaten zu den Persönlichkeitstests und den Computational Thinking Tests liefern, ist nur ein kultureller Vergleich beider Gruppen möglich. Deshalb werden im folgenden Abschnitt die beiden Studien in den fünf Bereichen miteinander verglichen.
 \subsection{Teamwork}
@@ -606,6 +647,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{tikzpicture}
 	\caption{Entwicklung des konvergenten Denkens}
 \end{figure}
+Vergleicht man das Teamwork von Deutschland und Kairo, sieht man bei beiden Gruppen einen ähnliches Anfangsniveau von knapp über 2. Während in Kairo das Teamwork dann ansteigt und erst zum letzten Termin wieder knapp unter den Anfangstrend fällt, sinkt es in Karlsruhe immer weiter bis auf knapp 1 ab. Beim Vergleich der beiden Gruppen muss jedoch auch die unterschiedliche Gruppengröße und die Anzahl der Termine berücksichtigt werden.
 \subsection{Divergentes Denken}
 \begin{figure}[H]
 	\centering
@@ -626,6 +668,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{tikzpicture}
 	\caption[Vergleich Entwicklung Teamfähigkeit beider Veranstaltungen]{Vergleich der Entwicklung der Teamfähigkeit beider Veranstaltungen}
 \end{figure}
+Auch hier sieht man bei beiden Gruppen ein ähnliches Ausgangsniveau, jedoch fällt auch hier das divergente Denken im verlauf ab. Bei der deutschen Gruppe wird auch hier fast ein Wert nahe 0 erzielt. 
 \subsection{Emergentes Denken}
 \begin{figure}[H]
 	\centering
@@ -646,6 +689,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{tikzpicture}
 	\caption[Vergleich Entwicklung emergentes Denken beider Veranstaltungen]{Vergleich der Entwicklung des emergenten Denkens beider Veranstaltungen}
 \end{figure}
+Ebenfalls beim emergenten Denken starten beide Gruppen bei einem ähnlichen Level von um die 2. die Zeitverlauf fallen wieder beide Gruppen deutlich ab, Deutschland liegt auch heir unter Ägypten.
 \subsection{Kreative Haltung}
 \begin{figure}[H]
 	\centering
@@ -666,6 +710,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{tikzpicture}
 	\caption[Vergleich Entwicklung kreative Haltung beider Veranstaltungen]{Vergleich der Entwicklung der kreativen Haltung beider Veranstaltungen}
 \end{figure}
+Ebenfalls beim emergenten Denken starten beide Gruppen bei einem ähnlichen Level von um die 2. die Zeitverlauf fallen wieder beide Gruppen deutlich ab, Deutschland liegt auch heir unter Ägypten.
 \subsection{Konvergentes Denken}
 \begin{figure}[H]
 	\centering
@@ -686,7 +731,7 @@ Da wie bereits erwähnt die Daten der Parallelveranstaltung in Ägypten keine Ve
 	\end{tikzpicture}
 	\caption[Vergleich Entwicklung konvergentes Denken beider Veranstaltungen]{Vergleich der Entwicklung des konvergenten Denkens beider Veranstaltungen}
 \end{figure}
-
+Im Bereich des konvergenten Denkens sieht man einen guten Start bei der ägyptischen Gruppe jedoch fällt diese im verlauf fast um 1. Die deutsche Gruppe hat einige Ausschläge nach oben und ist im Durchschnitt bei einem Wert um die 1.5.
 \section{Computational Thinking Test}
 	In dem folgenden Abschnitt wird die Auswertung der Ergebnisse des \acrshort{bctt}, welcher zu Beginn der Studie durchgeführt wurde, sowie die des \acrshort{cctt}, welcher nach Abschluss aller Termine von den Kindern bearbeitet wurde. Die Ergebnisse der beiden Tests befinden sich im Kapitel \ref{sec:ErgebnisseCTT}.
 	\subsection{BCTt}
